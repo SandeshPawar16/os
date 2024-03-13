@@ -1,0 +1,57 @@
+sandy@LAPTOP-LVPA2N3G:~$ ./osna2.sh
+CDAC Mumbai
+sandy@LAPTOP-LVPA2N3G:~$ vi osna2.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna2.sh
+CDAC Mumbai
+Enter a number
+2
+your entered number is 2
+sandy@LAPTOP-LVPA2N3G:~$ vi osan2.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna2.sh
+CDAC Mumbai
+Enter a number
+2
+your entered number is 2
+sandy@LAPTOP-LVPA2N3G:~$ vi osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ chmod +x osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna3.sh
+enter num1
+1
+enter num2
+2
+./osna3.sh: line 9: 1+2: command not found
+the sum of num1 ans num2 is
+sandy@LAPTOP-LVPA2N3G:~$ vi osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna3.sh
+enter num1
+2
+enter num2
+3
+./osna3.sh: line 9: expr2+3: command not found
+the sum of num1 ans num2 is
+sandy@LAPTOP-LVPA2N3G:~$ vi osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna3.sh
+enter num1
+2
+enter num2
+3
+./osna3.sh: line 8: result: command not found
+
+the sum of num1 ans num2 is 5
+sandy@LAPTOP-LVPA2N3G:~$ vi osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna3.sh
+enter num1
+1
+enter num2
+2
+./osna3.sh: line 8: result: command not found
+
+the sum of num1 and num2 is 3
+sandy@LAPTOP-LVPA2N3G:~$ vi osna3.sh
+sandy@LAPTOP-LVPA2N3G:~$ ./osna3.sh
+enter num1
+1
+enter num2
+2
+
+the sum of num1 and num2 is 3

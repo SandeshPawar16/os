@@ -1,0 +1,381 @@
+sandy@LAPTOP-LVPA2N3G:~$ sudo apt install zip
+[sudo] password for sandy:
+Reading state information... Done
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 79 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 930 kB of additional disk space will
+be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.2 [175 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 zip amd64 3.0-12build2 [176 kB]
+Fetched 350 kB in 6s (57.9 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 24224 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-26ubuntu3.2_amd64.deb ...Unpacking unzip (6.0-26ubuntu3.2) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-12build2_amd64.deb ...
+Unpacking zip (3.0-12build2) ...
+Setting up unzip (6.0-26ubuntu3.2) ...
+Setting up zip (3.0-12build2) ...
+Processing triggers for man-db (2.10.2-1) ...
+sandy@LAPTOP-LVPA2N3G:~$ cd LinuxAssignment
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ mkdir newdir
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ zip -r docs1.zip docs
+  adding: docs/ (stored 0%)
+  adding: docs/file2.txt (stored 0%)
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ ls
+docs  docs1.zip  file1.txt  newdir
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ unzip docs1.zip -d newdir
+Archive:  docs1.zip
+   creating: newdir/docs/
+ extracting: newdir/docs/file2.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ vi unzip docs1.zip2 files to edit
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ unzip docs1.zip -d newdir
+Archive:  docs1.zip
+replace newdir/docs/file2.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename: n
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ tree
+.
++-- docs
+¦   +-- file2.txt
++-- docs1.zip
++-- file1.txt
++-- newdir
+¦   +-- docs
+¦       +-- file2.txt
++-- unzip
+
+3 directories, 5 files
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ vi editor
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat file.txt
+cat: file.txt: No such file or directory
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat > file.txt
+hello
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat file.txt
+hello
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat > file.txt
+world
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat file.txt
+world
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat >file.txt
+hello world
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cat file.txt
+hello world
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ sed 's/world/Cdac/g' file.txt
+hello Cdac
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ mkdir q2
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cd q2/
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ touch data.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat > data.txt
+^V^VIn publishing and graphic design, Lorem ipsum (/?l??.r?m '?p.s?m/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+Example text
+A common form of Lorem ipsum reads:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Source text
+The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's De finibus bonorum et malorum.[7][8] The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.[1]
+
+The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for instances of the Latin word consectetur, which was rarely used in classical literature.[2] McClintock first published his discovery in a 1994 letter to the editor of Before & After magazine,[9] contesting the editor's earlier claim that Lorem ipsum held no meaning.[2]
+
+The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum highlighted. Letters in brackets were added to Lorem ipsum and were not present in the source text:
+
+[32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem reru[d]um facilis est e[r]t expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellend[a]us. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.sandy@LAPTOP-LVPA2N3G:~/LinuxAsandy@LAPTOP-sandy@LAPTOP-LVPA2N3G:~/Lisandy@LAPTOP-sandy@LAPTOP-sandy@LAPTOP-sandy@LAPTOP-sandy@LAPTOP-sandy@LAPTOP-sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ ls
+data.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head data.txt
+In publishing and graphic design, Lorem ipsum (/?l??.r?m '?p.s?m/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+Example text
+A common form of Lorem ipsum reads:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cd ..
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ mkdir -p cdac24
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cd ..
+sandy@LAPTOP-LVPA2N3G:~$ cd ..
+sandy@LAPTOP-LVPA2N3G:/home$ cd LinuxAssignment
+-bash: cd: LinuxAssignment: No such file or directory
+sandy@LAPTOP-LVPA2N3G:/home$ cd q2
+-bash: cd: q2: No such file or directory
+sandy@LAPTOP-LVPA2N3G:/home$ cd LinuxAssignment
+-bash: cd: LinuxAssignment: No such file or directory
+sandy@LAPTOP-LVPA2N3G:/home$ cd LinuxAssignment
+-bash: cd: LinuxAssignment: No such file or directory
+sandy@LAPTOP-LVPA2N3G:/home$  cd /q2
+-bash: cd: /q2: No such file or directory
+sandy@LAPTOP-LVPA2N3G:/home$ cd sandy
+sandy@LAPTOP-LVPA2N3G:~$ cd LinuxAssignment
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment$ cd q2
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head data.txt
+In publishing and graphic design, Lorem ipsum (/?l??.r?m '?p.s?m/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+Example text
+A common form of Lorem ipsum reads:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head -n 10 data.txt
+In publishing and graphic design, Lorem ipsum (/?l??.r?m '?p.s?m/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+Example text
+A common form of Lorem ipsum reads:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ vi data.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head data.txt
+In publishing and graphic design, Lorem ipsum (/?l??.r?m '?p.s?m/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.[6]
+
+Example text
+A common form of Lorem ipsum reads:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ tail data.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Source text
+The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's De finibus bonorum et malorum.[7][8] The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.[1]
+
+The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for instances of the Latin word consectetur, which was rarely used in classical literature.[2] McClintock first published his discovery in a 1994 letter to the editor of Before & After magazine,[9] contesting the editor's earlier claim that Lorem ipsum held no meaning.[2]
+
+The relevant section of Cicero as printed in the source is reproduced below with fragments used in Lorem ipsum highlighted. Letters in brackets were added to Lorem ipsum and were not present in the source tex
+
+[33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem reru[d]um facilis est e[r]t expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellend[a]us. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat >numbers.txt
+^[[F
+1
+2
+3
+4
+5
+6
+7
+8
+9
+7
+8
+5
+4
+00
+2
+23
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ heat numbers.txt
+Command 'heat' not found, but can be installed with:
+sudo apt install python3-heatclient
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ tail -n3 numbers.txt
+00
+2
+23
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ heat -n15 numbers.txt
+Command 'heat' not found, but can be installed with:
+sudo apt install python3-heatclient
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ head -n15 numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+7
+8
+5
+4
+00
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ tail -n5 numbers.txt
+5
+4
+00
+2
+23
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat > input.txt
+^V^VMumbai (/m?m'ba?/ ?, Marathi: ['mumb?i], IAST: Mu?bai; formerly known as Bombay[a]) is the capital city of the Indian state of Maharashtra. Mumbai, often described as the New York of India,[1] is the financial capital and the most populous city of India with an estimated city proper population of 12.5 million (1.25 crore).[21] Mumbai is the centre of the Mumbai Metropolitan Region, the sixth-most populous metropolitan area in the world with a population of over 23 million (2.3 crore) living within the Mumbai Metropolitan Region.[22] Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour. In 2008, Mumbai was named an alpha world city.[23][24]
+
+The seven islands that constitute Mumbai were earlier home to communities of Marathi language-speaking Koli people.[25][26][27] For centuries, the seven islands of Bombay were under the control of successive indigenous rulers before being ceded to the Portuguese Empire, and subsequently to the East India Company in 1661, through the dowry of Catherine Braganza when she was married off to Charles II of England.[28] Beginning in 1782, Mumbai was reshaped by the Hornby Vellard project,[29] which undertook reclamation of the area between the seven islands from the Arabian Sea.sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ tr [:lower:] [:upper:] input.txt
+tr: extra operand ‘input.txt’
+Try 'tr --help' for more information.
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat input.txt | tr [:lower:] [:upper:]
+MUMBAI (/M?M'BA?/ ?, MARATHI: ['MUMB?I], IAST: MU?BAi; FORMERLY KNOWN AS BOMBAY[A]) IS THE CAPITAL CITY OF THE INDIAN STATE OF MAHARASHTRA. MUMBAI, OFTEN DESCRIBED AS THE NEW YORK OF INDIA,[1] IS THE FINANCIAL CAPITAL AND THE MOST POPULOUS CITY OF INDIA WITH AN ESTIMATED CITY PROPER POPULATION OF 12.5 MILLION (1.25 CRORE).[21] MUMBAI IS THE CENTRE OF THE MUMBAI METROPOLITAN REGION, THE SIXTH-MOST POPULOUS METROPOLITAN AREA IN THE WORLD WITH A POPULATION OF OVER 23 MILLION (2.3 CRORE) LIVING WITHIN THE MUMBAI METROPOLITAN REGION.[22] MUMBAI LIES ON THE KONKAN COAST ON THE WEST COAST OF INDIA AND HAS A DEEP NATURAL HARBOUR. IN 2008, MUMBAI WAS NAMED AN ALPHA WORLD CITY.[23][24]
+
+THE SEVEN ISLANDS THAT CONSTITUTE MUMBAI WERE EARLIER HOME TO COMMUNITIES OF MARATHI LANGUAGE-SPEAKING KOLI PEOPLE.[25][26][27] FOR CENTURIES, THE SEVEN ISLANDS OF BOMBAY WERE UNDER THE CONTROL OF SUCCESSIVE INDIGENOUS RULERS BEFORE BEING CEDED TO THE PORTUGUESE EMPIRE, AND SUBSEQUENTLY TO THE EAST INDIA COMPANY IN 1661, THROUGH THE DOWRY OF CATHERINE BRAGANZA WHEN SHE WAS MARRIED OFF TO CHARLES II OF ENGLAND.[28] BEGINNING IN 1782, MUMBAI WAS RESHAPED BY THE HORNBY VELLARD PROJECT,[29] WHICH UNDERTOOK RECLAMATION OF THE AREA BETWEEN THE SEVEN ISLANDS FROM THE ARABIAN SEA.sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat >input.txt
+HELLO UBUNTU
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat input.txt | tr [:lower:] [:upper:]
+HELLO UBUNTU
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat input.txt | tr [:upper:] [:lower:]
+hello ubuntu
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ tr 'a-z' 'A-Z' <input.txt> output.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat output.txt
+HELLO UBUNTU
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ ls
+data.txt  input.txt  numbers.txt  output.txt
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat > duplicate.txt
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat >fruit.txt
+apple
+peach
+nut
+lime
+nut
+pear
+peach
+fig
+melon
+date
+fig
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq duplicate.txt
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ cat duplicate.txt | uniq
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq duplicate.txt
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -u duplicate.txt
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -u dupllicate.txt
+uniq: dupllicate.txt: No such file or directory
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -u duplicate
+uniq: duplicate: No such file or directory
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -u duplicate.txt
+apple
+ball
+cat
+apple
+ball
+dog
+hat
+ball
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq fruit.txt
+apple
+peach
+nut
+lime
+nut
+pear
+peach
+fig
+melon
+date
+fig
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -u fruit.txt
+apple
+peach
+nut
+lime
+nut
+pear
+peach
+fig
+melon
+date
+fig
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq -c fruit.txt
+      1 apple
+      1 peach
+      1 nut
+      1 lime
+      1 nut
+      1 pear
+      1 peach
+      1 fig
+      1 melon
+      1 date
+      1 fig
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ sort fruit.txt | unniq -c
+Command 'unniq' not found, did you mean:
+  command 'uniq' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ uniq fruit.txt | uniq -c
+      1 apple
+      1 peach
+      1 nut
+      1 lime
+      1 nut
+      1 pear
+      1 peach
+      1 fig
+      1 melon
+      1 date
+      1 fig
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$ sort fruit.txt | uniq -c
+      1 apple
+      1 date
+      2 fig
+      1 lime
+      1 melon
+      2 nut
+      2 peach
+      1 pear
+sandy@LAPTOP-LVPA2N3G:~/LinuxAssignment/q2$

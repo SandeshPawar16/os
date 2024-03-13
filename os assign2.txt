@@ -1,0 +1,98 @@
+Q What will the following command do?
+
+1. echo "Hello, World!"
+the echo command will print the given statement "Hello, World!"
+
+name="Productive"
+it is naming a variable "productive"
+
+touch file.txt 
+It will create a file namely file with .txt extension
+
+ls -la
+it displays all files and folders details including hidden files
+
+rm file.txt 
+It is used to delete file.txt
+
+cp file1.txt file2.txt 
+this will copy file1.txt tofile2.txt
+
+mv file.txt /path/to/directory/
+this will move the file.txt file
+
+chmod 755 script.sh
+this command will change the file attributes of file.txt 
+to rrx+rx+rx
+
+grep "pattern" file.txt 
+It will look for the pattern in file.txt
+
+
+kill PID
+to kill a process
+
+mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt 
+After making new folder ,file , It will print Hello, World
+
+
+ls -l | grep ".txt"
+This will list all the files and search for all the .txt files
+
+cat file1.txt file2.txt | sort | uniq
+it will open file1.txt and file2.txt and also sort it out.
+
+ls -l | grep "^d" 
+
+
+grep -r "pattern" /path/to/directory/
+
+
+ 
+cat file1.txt file2.txt | sort | uniq –d
+the files 1 and 2 will open and will get sorted
+
+chmod 644 file.txt
+it change the permissions as rw for owner and w for user and others
+
+ cp -r source_directory destination_directory
+
+
+ find /path/to/search -name "*.txt"
+
+
+ chmod u+x file.txt
+permissions will be updated for the user to execute
+
+
+ echo $PATH
+print the values fro the variable path 
+
+
+Q1  B
+Identify True or False:
+1. ls is used to list files and directories in a directory.  T
+2. mv is used to move files and directories.  T
+3. cd is used to copy files and directories.  F (cp is used)(cd for current directory)
+4. pwd stands for "print working directory" and displays the current directory. F (its present working dir.)
+5. grep is used to search for patterns in files. T
+6. chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute
+permissions to group and others.  T
+7. mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1
+if directory1 does not exist.
+8. rm -rf file.txt deletes a file forcefully without confirmation.
+
+
+Identify the Incorrect Commands:
+1. chmodx is used to change file permissions.  X
+2. cpy is used to copy files and directories.  X
+3. mkfile is used to create a new file.        X
+4. catx is used to concatenate files.          X
+5. rn is used to rename files.                 X
+
+
+
+
+
+
+ 
